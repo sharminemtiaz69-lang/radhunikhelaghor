@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রাধুনী খেলাঘর | Radhuni Khela Ghor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #fcf8f2;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        header {
+            background-color: #8B4513;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            color: #ffebcd;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .site-url {
+            color: #fff;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: #ffebcd;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #8B4513;
+            margin-bottom: 10px;
+        }
+        .section-slogan {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            text-align: center;
+            border: 1px solid #eaddca;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-bottom: 1px solid #eaddca;
+        }
+        .product-info {
+            padding: 25px;
+        }
+        .product-info h3 {
+            font-size: 1.5rem;
+            color: #5c2c16;
+            margin-bottom: 12px;
+        }
+        .product-info p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            height: 70px;
+        }
+        .product-meta {
+            font-weight: bold;
+            color: #d2691e;
+            font-size: 1.15rem;
+            margin-bottom: 20px;
+            background-color: #fff8f0;
+            padding: 8px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        .btn-buy {
+            display: block;
+            background-color: #d2691e;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.05rem;
+            transition: background 0.3s;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+        .btn-buy:hover {
+            background-color: #8B4513;
+        }
+        footer {
+            background-color: #3e2723;
+            color: #f5f5f5;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 40px;
+            line-height: 1.8;
+        }
+        footer p {
+            margin-bottom: 10px;
+            font-size: 1.05rem;
+        }
+        .footer-links {
+            margin: 15px 0;
+        }
+        .footer-links a {
+            color: #ffebcd;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- হেডার সেকশন (লোগো ছাড়া টেক্সট ভিত্তিক প্রিমিয়াম লুক) -->
+    <header>
+        <div class="logo-container">
+            <h1>রাধুনী খেলাঘর</h1>
+            <p class="site-url">www.RadhuniKhelaGhor.com</p>
+        </div>
+        <nav>
+            <a href="#">হোম</a> | 
+            <a href="#peanut-butter">পিনাট বাটার</a> | 
+            <a href="#mayonnaise">মেয়োনিজ</a> | 
+            <a href="#contact">যোগাযোগ</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- পিনাট বাটার সেকশন -->
+        <section id="peanut-butter">
+            <h2 class="section-title">🥜 পিনাট বাটার সেকশন</h2>
+            <p class="section-slogan">"খাঁটি বাদামের পুষ্টি, স্বাদে আনবে তুষ্টি!"</p>
+
+            <div class="product-grid">
+                <!-- চকলেট পিনাট বাটার -->
+                <div class="product-card">
+                    <img src="ChocoPeanut.png" alt="চকলেট পিনাট বাটার" class="product-image">
+                    <div class="product-info">
+                        <h3>চকলেট পিনাট বাটার</h3>
+                        <p>প্রিমিয়াম ডার্ক চকলেটের টুইস্ট আর ক্রিস্পি বাদামের পারফেক্ট কম্বিনেশন। যারা একটু মিষ্টি আর চকোলেটি ফ্লেভার পছন্দ করেন, তাদের জন্য সেরা চয়েস।</p>
+                        <div class="product-meta">ওজন: ২০০ গ্রাম | মূল্য: ২৫০ টাকা</div>
+                        <a href="https://www.facebook.com/profile.php?id=61590341897032" target="_blank" class="btn-buy">এখনই কিনুন</a>
+                    </div>
+                </div>
+
+                <!-- রেগুলার পিনাট বাটার -->
+                <div class="product-card">
+                    <img src="PeanutButter.png" alt="রেগুলার পিনাট বাটার" class="product-image">
+                    <div class="product-info">
+                        <h3>রেগুলার পিনাট বাটার</h3>
+                        <p>১০০% খাঁটি ভাজা বাদাম থেকে তৈরি একদম ক্লাসিক স্বাদের পিনাট বাটার। কোনো কৃত্রিম ফ্লেভার বা প্রিজারভেটিভ নেই। ডায়েট ও স্বাস্থ্যের জন্য একদম পারফেক্ট।</p>
+                        <div class="product-meta">ওজন: ২০০ গ্রাম | মূল্য: ২২০ টাকা</div>
+                        <a href="https://www.facebook.com/profile.php?id=61590341897032" target="_blank" class="btn-buy">এখনই কিনুন</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr style="border: 0; height: 1px; background: #eaddca; margin-bottom: 60px;">
+
+        <!-- মেয়োনিজ সেকশন -->
+        <section id="mayonnaise">
+            <h2 class="section-title">🧴 মেয়োনিজ সেকশন</h2>
+            <p class="section-slogan">"প্রতিটি বাইট হোক আরও ক্রিমি, আরও মজাদার!"</p>
+
+            <div class="product-grid">
+                <!-- রেগুলার মেয়োনিজ -->
+                <div class="product-card">
+                    <img src="Mayo.png" alt="রেগুলার মেয়োনিজ" class="product-image">
+                    <div class="product-info">
+                        <h3>রেগুলার মেয়োনিজ</h3>
+                        <p>একদম ক্লাসিক, রিচ এবং স্মুথ টেক্সচারের রেগুলার মেয়োনিজ। স্যান্ডউইচ, বার্গার কিংবা ফ্রাইজের স্বাদ দ্বিগুণ করতে এর জুড়ি নেই।</p>
+                        <div class="product-meta">ওজন: ২৫০ গ্রাম | মূল্য: ১৮০ টাকা</div>
+                        <a href="https://www.facebook.com/profile.php?id=61590341897032" target="_blank" class="btn-buy">এখনই কিনুন</a>
+                    </div>
+                </div>
+
+                <!-- স্পাইসি মেয়োনিজ -->
+                <div class="product-card">
+                    <img src="SpicyMayo.png" alt="স্পাইসি মেয়োনিজ" class="product-image">
+                    <div class="product-info">
+                        <h3>স্পাইসি মেয়োনিজ</h3>
+                        <p>যারা খাবারে একটু ঝাল আর টুইস্ট পছন্দ করেন, তাদের জন্য আমাদের এই স্পেশাল স্পাইসি মেয়োনিজ। ক্রিস্পি চিকেন ফ্রাই কিংবা মোমোর সাথে জাস্ট জমে যাবে!</p>
+                        <div class="product-meta">ওজন: ২৫০ গ্রাম | মূল্য: ২০০ টাকা</div>
+                        <a href="https://www.facebook.com/profile.php?id=61590341897032" target="_blank" class="btn-buy">এখনই কিনুন</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- ফুটার সেকশন (তোমার আসল কন্টাক্ট ডিটেইলস সহ) -->
+    <footer id="contact">
+        <p>📱 যোগাযোগ: +৮৮০১৭৫৮৪৪৪৪৮২</p>
+        <p>📱 যোগাযোগ: +8801758444482| 📧 ইমেইল: radhunikhelaghorinfo@gmail.com/p>
+        <p>🚚 সারা বাংলাদেশে ক্যাশ অন ডেলিভারি অ্যাভেইলেবল!</p>
+        <div class="footer-links">
+            <a href="https://www.facebook.com/profile.php?id=61590341897032" target="_blank">ফেসবুক পেজ</a> | 
+            <a href="#">ইনস্টাগ্রাম</a>
+        </div>
+        <br>
+        <p style="font-size: 0.85rem; color: #aaa;">&copy; ২০২৬ www.RadhuniKhelaGhor.com - সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+</body>
+</html>
